@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -58,6 +59,10 @@ public class MainActivity extends AppCompatActivity {
 
                 recyclerView = (RecyclerView) findViewById(R.id.rv);
                 linearLayoutManager = new LinearLayoutManager(MainActivity.this);
+                DividerItemDecoration dividerItemDecoration=new DividerItemDecoration(MainActivity.this,linearLayoutManager.getOrientation());
+                PhOffsetItemDecoration itemDecoration=new PhOffsetItemDecoration(50);
+                recyclerView.addItemDecoration(itemDecoration);
+                recyclerView.addItemDecoration(dividerItemDecoration);
                 recyclerView.setLayoutManager(linearLayoutManager);
                 mainAdapter = new MainAdapter((ArrayList<MainData>) firebase.getDatas(), MainActivity.this);
                 recyclerView.setAdapter(mainAdapter);
