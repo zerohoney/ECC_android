@@ -66,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
                 recyclerView.setLayoutManager(linearLayoutManager);
                 mainAdapter = new MainAdapter((ArrayList<MainData>) firebase.getDatas(), MainActivity.this);
                 recyclerView.setAdapter(mainAdapter);
+                button.setText("저장");
             }
         });
         // Read from the database

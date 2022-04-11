@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 
 import android.content.Context;
+import android.util.SparseBooleanArray;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,6 +17,8 @@ import java.util.ArrayList;
 
 public class MainAdapter extends RecyclerView.Adapter<MainAdapter.CustomViewHolder> {
     private ArrayList<MainData> arrayList;
+    private SparseBooleanArray selectedItems=new SparseBooleanArray();
+    private int prePosition=-1;
     private Context context;
 
     public MainAdapter(ArrayList<MainData> arrayList,Context context) {
@@ -36,7 +39,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.CustomViewHold
     @Override
     public void onBindViewHolder(@NonNull CustomViewHolder holder, int position) {
         holder.title_id.setText(arrayList.get(position).getTitle_id());
-        holder.id.setText(String.valueOf(arrayList.get(position).getId()));
+        holder.id.setText(String.valueOf(arrayList.get(position).getId())+".");
         holder.content.setText(arrayList.get(position).getContent());
 
         holder.itemView.setTag(position);
