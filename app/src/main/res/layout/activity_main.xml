@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:text=">>                          ECC평가실시"
+        android:text=">>"
         android:textSize="30dp"
         android:textColor="@color/white"
         android:background="#3F51B5"
@@ -20,28 +20,32 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <Button
+        android:orientation="horizontal"
+        >
+        <androidx.appcompat.widget.AppCompatButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="#ABACAF"
             android:layout_margin="10dp"
+            android:background="@drawable/radius_main"
             android:layout_weight="1"
-            android:text="선택"/>
-        <Button
+            android:text="선택"
+            android:textColor="@color/black"/>
+        <androidx.appcompat.widget.AppCompatButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="#ABACAF"
             android:layout_margin="10dp"
+            android:background="@drawable/radius_main"
             android:layout_weight="1"
-            android:text="선택"/>
-        <Button
+            android:text="선택"
+            android:textColor="@color/black"/>
+        <androidx.appcompat.widget.AppCompatButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="#ABACAF"
             android:layout_margin="10dp"
+            android:background="@drawable/radius_main"
             android:layout_weight="1"
-            android:text="선택"/>
+            android:text="선택"
+            android:textColor="@color/black"/>
 
     </LinearLayout>
 

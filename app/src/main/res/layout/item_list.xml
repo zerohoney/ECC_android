@@ -75,6 +75,7 @@
     <EditText
         android:layout_width="300dp"
         android:layout_height="70dp"
+        android:id="@+id/descripstion"
         android:layout_gravity="center"
         android:layout_margin="30dp"
         android:background="@drawable/edittext_rounded_corner_rectangle"
