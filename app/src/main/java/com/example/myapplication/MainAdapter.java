@@ -38,7 +38,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.CustomViewHold
 
     @Override
     public void onBindViewHolder(@NonNull CustomViewHolder holder, int position) {
-        holder.title_id.setText(arrayList.get(position).getTitle_id());
+//        holder.title_id.setText(arrayList.get(position).getTitle_id());
         holder.id.setText(String.valueOf(arrayList.get(position).getId())+".");
         holder.content.setText(arrayList.get(position).getContent());
 
@@ -83,7 +83,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.CustomViewHold
 
         public CustomViewHolder( View itemView) {
             super(itemView);
-            this.title_id = (TextView) itemView.findViewById(R.id.profile);
+//            this.title_id = (TextView) itemView.findViewById(R.id.profile);
             this.id = (TextView) itemView.findViewById(R.id.name);
             this.content = (TextView) itemView.findViewById(R.id.name2);
 
