@@ -41,7 +41,6 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.CustomViewHold
         holder.title_id.setText(arrayList.get(position).getTitle_id());
         holder.id.setText(String.valueOf(arrayList.get(position).getId())+".");
         holder.content.setText(arrayList.get(position).getContent());
-
         holder.itemView.setTag(position);
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override

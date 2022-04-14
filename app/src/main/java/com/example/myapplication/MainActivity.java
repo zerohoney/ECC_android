@@ -1,12 +1,15 @@
 package com.example.myapplication;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AlertDialogLayout;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.Animation;
@@ -45,6 +48,8 @@ public class MainActivity extends AppCompatActivity {
     private Button button;
     private static final String TAG = "MainActivity";
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,8 +66,10 @@ public class MainActivity extends AppCompatActivity {
                 linearLayoutManager = new LinearLayoutManager(MainActivity.this);
                 DividerItemDecoration dividerItemDecoration=new DividerItemDecoration(MainActivity.this,linearLayoutManager.getOrientation());
                 PhOffsetItemDecoration itemDecoration=new PhOffsetItemDecoration(50);
+//                recyclerVIew
                 recyclerView.addItemDecoration(itemDecoration);
                 recyclerView.addItemDecoration(dividerItemDecoration);
+//                decorate(line, margin)
                 recyclerView.setLayoutManager(linearLayoutManager);
                 mainAdapter = new MainAdapter((ArrayList<MainData>) firebase.getDatas(), MainActivity.this);
                 recyclerView.setAdapter(mainAdapter);

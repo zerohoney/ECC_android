@@ -17,9 +17,7 @@ import java.util.List;
 public class Firebase {
 
 
-    private MainAdapter mainAdapter;
-    private RecyclerView recyclerView;
-    private LinearLayoutManager linearLayoutManager;
+
     private static final String TAG = "MainActivity";
     private List<MainData> datas = new ArrayList<>();
 
