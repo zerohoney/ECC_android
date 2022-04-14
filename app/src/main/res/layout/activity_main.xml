@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:text=">>                          ECC평가실시"
+        android:text=">>"
         android:textSize="30dp"
         android:textColor="@color/white"
         android:background="#3F51B5"
@@ -20,28 +20,32 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <Button
+        android:orientation="horizontal"
+        >
+        <androidx.appcompat.widget.AppCompatButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="#ABACAF"
             android:layout_margin="10dp"
+            android:background="@drawable/radius_main"
             android:layout_weight="1"
-            android:text="선택"/>
-        <Button
+            android:text="선택"
+            android:textColor="@color/black"/>
+        <androidx.appcompat.widget.AppCompatButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="#ABACAF"
             android:layout_margin="10dp"
+            android:background="@drawable/radius_main"
             android:layout_weight="1"
-            android:text="선택"/>
-        <Button
+            android:text="선택"
+            android:textColor="@color/black"/>
+        <androidx.appcompat.widget.AppCompatButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="#ABACAF"
             android:layout_margin="10dp"
+            android:background="@drawable/radius_main"
             android:layout_weight="1"
-            android:text="선택"/>
+            android:text="선택"
+            android:textColor="@color/black"/>
 
     </LinearLayout>
 
@@ -51,15 +55,17 @@
         android:layout_height="0dp"
         android:scrollbarFadeDuration="0"
         android:scrollbarSize="5dp"
-        android:scrollbarThumbVertical="@android:color/darker_gray"
+        android:scrollbarThumbVertical="@color/purple_500"
         android:scrollbars="vertical"
         android:layout_weight="10"/>
 
 
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="0dp"
         android:id="@+id/btn"
+        android:layout_gravity="center"
+        android:backgroundTint="#3F7EB5"
         android:layout_weight="1"
         android:text="추가"/>
 </LinearLayout>
